@@ -54,6 +54,11 @@ const GlobalStyles = createGlobalStyle`
   h3 {
     font-size: 0.95rem;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 export default GlobalStyles;

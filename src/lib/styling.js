@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 // Global
 
 export const StyledSection = styled.section`
-  padding: 0 10%;
+  padding: 4rem 10%;
   display: flex;
   flex-direction: column;
 
@@ -12,11 +12,11 @@ export const StyledSection = styled.section`
   }
 
   @media (min-width: ${p => p.theme.tabletSize}) {
-    padding: 0 15%;
+    padding: 4rem 15%;
   }
 
   @media (min-width: ${p => p.theme.desktopSize}) {
-    padding: 0 20%;
+    padding: 4rem 20%;
     align-items: center;
   }
 `;
@@ -25,27 +25,17 @@ export const StyledTitle = styled.h2`
   background: ${p => p.theme.colorAccent};
   color: ${p => p.theme.colorTextAccent};
   padding: 3px 10px;
-  /* font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif; */
-  /* font-size: 22px; */
   text-transform: uppercase;
   width: fit-content;
   align-self: center;
-  margin: 3.8rem 0 2.25rem 0;
+  /* margin: 3.8rem 0 2.25rem 0; */
+  margin: 0 0 2.25rem 0;
 `;
 
 export const StyledText = styled.p`
   color: ${p => p.theme.colorTextPrimary};
-  padding: ${p => p.noPaddingBottom ? "0 0 3.75rem 0" : "3.75rem 0"};
+  /* padding: ${p => p.noPaddingBottom ? "0 0 3.75rem 0" : "3.75rem 0"}; */
   text-align: ${p => p.center ? "center" : ""};
-  /* padding: 58px 0; // 3.625 */
-
-  /* @media (min-width: ${p => p.theme.tabletSize}) {
-    padding: 91px 0; // 3.8
-  }
-
-  @media (min-width: ${p => p.theme.desktopSize}) {
-    padding: 124px 0; // 3.875
-  } */
 `;
 
 // App
@@ -112,6 +102,45 @@ export const Emphasized = styled.span`
   font-weight: bold;
 `;
 
+// More
+
+export const IconContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* margin-bottom: 4rem; */
+`;
+
+export const IconWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+
+  a {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: ${p => `3px solid ${p.theme.colorAccent}`};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    fill: ${p => p.theme.colorAccent};
+    width: 1.3rem;
+  }
+
+  p {
+    color: ${p => p.theme.colorAccent};
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+`;
+
 // Footer
 
 export const StyledFooter = styled.footer`
@@ -121,13 +150,6 @@ export const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
   padding: 4rem 0;
-  /* justify-self: center;
-  width: 100%;
-  padding: 1rem;
-  text-align: center;
-  font-size: 0.65rem;
-  max-width: 1024px;
-  align-self: center; */
 `;
 
 export const StyledFooterTitle = styled.h1`
@@ -143,9 +165,4 @@ export const StyledFooterText = styled.p`
   margin-top: ${p => p.attribution ? "1.5rem" : "inherit"};
   font-weight: ${p => p.bold ? "bold" : "normal"};
   text-align: center;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
 `;
