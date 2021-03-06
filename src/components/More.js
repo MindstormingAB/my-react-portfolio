@@ -13,16 +13,20 @@ const More = () => {
           <a
             href="https://github.com/MindstormingAB/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            aria-label="Link to Sandrine's Github account"
+            >
             <GithubIcon />
           </a>
           <p>Github</p>
         </IconWrapper>
         <IconWrapper>
           <a
-            href="https://github.com/MindstormingAB/"
+            href="https://www.linkedin.com/in/sandrine-elander-10498b4/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            aria-label="Link to Sandrine's LinkedIn account"
+          >
             <LinkedInIcon />
           </a>
           <p>LinkedIn</p>

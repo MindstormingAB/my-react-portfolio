@@ -1,4 +1,8 @@
 import styled from "styled-components/macro";
+import mobileBackground from "../assets/umbrellas-mobile.jpg";
+import tabletBackground from "../assets/umbrellas-tablet.jpg";
+import desktopBackground from "../assets/umbrellas-desktop.jpg";
+import profilePicture from "../assets/sandrine-324.jpg";
 
 // Global
 
@@ -29,13 +33,11 @@ export const StyledTitle = styled.h2.attrs(() => ({
   text-transform: uppercase;
   width: fit-content;
   align-self: center;
-  /* margin: 3.8rem 0 2.25rem 0; */
   margin: 0 0 2.25rem 0;
 `;
 
 export const StyledText = styled.p`
   color: ${p => p.theme.colorTextPrimary};
-  /* padding: ${p => p.noPaddingBottom ? "0 0 3.75rem 0" : "3.75rem 0"}; */
   text-align: ${p => p.center ? "center" : ""};
 `;
 
@@ -49,6 +51,96 @@ export const StyledContainer = styled.main`
   flex-direction: column;
   align-items: center;
   max-width: 1024px; */
+`;
+
+// Header
+
+export const StyledHeader = styled.header`
+  padding: 6.5rem 10% 0 10%;
+  background-image: url(${mobileBackground});
+  background-color: ${p => p.theme.colorDarken};
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 31.75rem;
+  width: 100vw;
+  color: ${p => p.theme.colorTextAccent};
+
+  @media (min-width: ${p => p.theme.tabletSize}) {
+    padding: 3.25rem 15% 0 15%;
+    background-image: url(${tabletBackground});
+    min-height: 24.25rem;
+  }
+
+  @media (min-width: ${p => p.theme.desktopSize}) {
+    padding: 3.25rem 20% 0 20%;
+    background-image: url(${desktopBackground});
+    min-height: 20.5rem;
+  }
+`;
+
+export const LinkContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+
+  @media (min-width: ${p => p.theme.tabletSize}) {
+    padding-bottom: 1.5rem;
+  }
+
+  a {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: ${p => `3px solid ${p.theme.colorTextAccent}`};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.3rem;
+  }
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+  }
+`;
+
+export const TextContainer = styled.div.attrs(() => ({
+  tabIndex: 0
+}))`
+  font-family: ${p => p.theme.fontSecundary};
+  width: 14.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+`;
+
+export const HeaderText = styled.h3`
+  font-weight: ${p => p.bold ? "bold" : "normal"};
+  text-transform: uppercase;
+  font-size: 0.9rem;
+`;
+
+export const Profile = styled.div`
+  background-image: url(${profilePicture});
+  background-size: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  position: absolute;
+  width: 9.75rem;
+  height: 9.75rem;
+  top: 22.5rem;
+  right: 10%;
+
+  @media (min-width: ${p => p.theme.tabletSize}) {
+    right: 15%;
+    top: 15rem;
+  }
+
+  @media (min-width: ${p => p.theme.desktopSize}) {
+    right: 20%;
+    top: 11.5rem;
+  }
 `;
 
 // About
@@ -187,6 +279,7 @@ export const IconWrapper = styled.div`
   svg {
     fill: ${p => p.theme.colorAccent};
     width: 1.3rem;
+    height: 1.3rem;
   }
 
   p {
