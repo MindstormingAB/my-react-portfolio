@@ -21,7 +21,8 @@ export const StyledSection = styled.section`
   }
 `;
 
-export const StyledTitle = styled.h2`
+export const StyledTitle = styled.h2.attrs(() => ({
+  tabIndex: 0 }))`
   background: ${p => p.theme.colorAccent};
   color: ${p => p.theme.colorTextAccent};
   padding: 3px 10px;
@@ -102,13 +103,68 @@ export const Emphasized = styled.span`
   font-weight: bold;
 `;
 
+// Skills
+
+export const SkillsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-family: ${p => p.theme.fontSecundary};
+
+  @media (min-width: ${p => p.theme.tabletSize}) {
+    display: grid;
+    grid-template-columns: 13rem 13rem;
+    justify-items: center;
+  }
+
+  @media (min-width: ${p => p.theme.desktopSize}) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`;
+
+export const SkillBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: ${p => p.theme.desktopSize}) {
+    margin-bottom: 0;
+  }
+`;
+
+export const StyledListTitle = styled.h3.attrs(() => ({
+  tabIndex: 0
+}))`
+  color: ${p => p.theme.colorAccent};
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+`;
+
+export const StyledList = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+`;
+
+export const ListItem = styled.li.attrs(() => ({
+  tabIndex: 0
+}))`
+  line-height: 1.5rem;
+`;
+
 // More
 
 export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* margin-bottom: 4rem; */
 `;
 
 export const IconWrapper = styled.div`

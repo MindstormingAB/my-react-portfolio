@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
     /* font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif; */
     font-family: ${p => p.theme.fontPrimary};
     font-size: 16px;
+    color: ${p => p.theme.colorTextPrimary};
 
     @media (min-width: ${p => p.theme.tabletSize}) {
       font-size: 24px;
@@ -52,7 +53,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h3 {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   a {
