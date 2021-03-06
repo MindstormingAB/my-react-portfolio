@@ -226,8 +226,18 @@ export const SkillBlock = styled.div`
     margin-bottom: 0;
   }
 
+  @media (min-width: ${p => p.theme.tabletSize}) {
+    &:last-child {
+      grid-column: 1 / span 2;
+    }
+  }
+
   @media (min-width: ${p => p.theme.desktopSize}) {
     margin-bottom: 0;
+
+    &:last-child {
+      grid-column: 3 / span 1;
+    }
   }
 `;
 
