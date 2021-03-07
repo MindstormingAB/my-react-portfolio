@@ -23,7 +23,7 @@ const Project = ({ projectsData }) => {
             {project.featured &&
               <ProjectThumbnail
                 title={project.title}
-                images={project.image_urls}
+                url={project.image_url}
               />
             }
             <ProjectDescription

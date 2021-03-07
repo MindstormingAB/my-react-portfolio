@@ -4,10 +4,7 @@
       "title": "Rum 35A",
       "short_description": "Home decoration shop",
       "long_description": "Web app built in React using Sanity as headless CMS",
-      "image_urls": {
-        "small": "rum35a-303.png",
-        "large": "rum35a-522.png"
-      },
+      "image_url": "rum35a",
       "href": "https://rum-35a.netlify.app/",
       "tags": [
         "React",
@@ -18,13 +15,41 @@
       "featured": true
     },
     {
+      "title": "Epilepsy App",
+      "short_description": "Final Project",
+      "long_description": "Progressive Web App built as final project for the Technigo boot camp",
+      "image_url": "final-project",
+      "href": "https://epilepsy-app-pwa.netlify.app/",
+      "tags": [
+        "PWA",
+        "React",
+        "React Router",
+        "Styled components",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "featured": true
+    },
+    {
       "title": "SMHI Killer",
       "short_description": "Weather App",
       "long_description": "Web app built in Javascript using open weather API",
-      "image_urls": {
-        "small": "weather-app-303.png",
-        "large": "weather-app-522.png"
-      },
+      "image_url": "week-20",
+      "href": "https://smhi-killer.netlify.app/",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "Javascript ES6",
+        "API"
+      ],
+      "featured": true
+    },
+    {
+      "title": "SMHI Killer",
+      "short_description": "Weather App",
+      "long_description": "Web app built in Javascript using open weather API",
+      "image_url": "week-06",
       "href": "https://smhi-killer.netlify.app/",
       "tags": [
         "HTML5",
@@ -38,10 +63,7 @@
       "title": "Happy Buddy Dog Day Care",
       "short_description": "Business Site",
       "long_description": "One pager website with video header, signup form and accordion",
-      "image_urls": {
-        "small": "",
-        "large": ""
-      },
+      "image_url": "week-03",
       "href": "https://happy-buddy.netlify.app/",
       "tags": [
         "HTML5",

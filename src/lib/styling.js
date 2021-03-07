@@ -3,7 +3,6 @@ import mobileBackground from "../assets/umbrellas-mobile.jpg";
 import tabletBackground from "../assets/umbrellas-tablet.jpg";
 import desktopBackground from "../assets/umbrellas-desktop.jpg";
 import profilePicture from "../assets/sandrine-324.jpg";
-import weatherImage from "../assets/weather-app-303.png";
 
 // Global
 
@@ -49,7 +48,9 @@ export const StyledSubTitle = styled.h3.attrs(() => ({
   font-size: 1.2rem;
 `;
 
-export const StyledText = styled.p`
+export const StyledText = styled.p.attrs(() => ({
+  tabIndex: 0
+}))`
   color: ${p => p.theme.colorTextPrimary};
   text-align: ${p => p.center ? "center" : ""};
 `;
@@ -221,7 +222,6 @@ export const ProjectsContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    width: 35.3rem;
   }
 `;
 
@@ -249,7 +249,6 @@ export const StyledThumbnail = styled.div`
   /* background-size: cover;
   background-color: ${p => p.theme.colorDarken};
   background-image: ${p => `url(${process.env.PUBLIC_URL}/images/${p.imgUrl}-303.png)`}; */
-  /* background-image: url(${weatherImage}); */
   /* background-image: url(${(p)=>p.imgUrl}); */
   /* background-image: ${(p)=>`url(${p.imgUrl}-303.png)`}; */
 
@@ -306,6 +305,7 @@ export const TagsContainer = styled.div.attrs(() => ({
   tabIndex: 0
 }))`
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 1.5rem;
   font-family: ${p => p.theme.fontSecundary};
 `;
@@ -317,13 +317,13 @@ export const ProjectTag = styled.p.attrs(() => ({
   line-height: 10px;
   background: ${p => p.theme.colorLight};
   padding: 4px 11px;
-  margin-right: 3px;
+  margin: 0 3px 3px 0;
 
   @media (min-width: ${p => p.theme.tabletSize}) {
     font-size: 16px;
     line-height: 19px;
     padding: 5px 18px;
-    margin-right: 7px;
+    margin: 0 7px 7px 0;
   }
 `;
 
@@ -443,14 +443,18 @@ export const StyledFooter = styled.footer`
   padding: 4rem 0;
 `;
 
-export const StyledFooterTitle = styled.h1`
+export const StyledFooterTitle = styled.h1.attrs(() => ({
+  tabIndex: 0
+}))`
   margin: 0 0 1.5rem 0;
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
 `;
 
-export const StyledFooterText = styled.p`
+export const StyledFooterText = styled.p.attrs(() => ({
+  tabIndex: 0
+}))`
   font-family: ${p => p.theme.fontSecundary};
   font-size: ${p => p.attribution ? "0.65rem" : "inherit"};
   margin-top: ${p => p.attribution ? "1.5rem" : "inherit"};
