@@ -3,6 +3,7 @@ import mobileBackground from "../assets/umbrellas-mobile.jpg";
 import tabletBackground from "../assets/umbrellas-tablet.jpg";
 import desktopBackground from "../assets/umbrellas-desktop.jpg";
 import profilePicture from "../assets/sandrine-324.jpg";
+import weatherImage from "../assets/weather-app-303.png";
 
 // Global
 
@@ -31,9 +32,21 @@ export const StyledTitle = styled.h2.attrs(() => ({
   color: ${p => p.theme.colorTextAccent};
   padding: 3px 10px;
   text-transform: uppercase;
-  width: fit-content;
+  width: max-content;
   align-self: center;
   margin: 0 0 2.25rem 0;
+`;
+
+export const StyledSubTitle = styled.h3.attrs(() => ({
+  tabIndex: 0 }))`
+  color: ${p => p.theme.colorAccent};
+  /* color: ${p => p.theme.colorTextAccent}; */
+  /* padding: 3px 10px; */
+  text-transform: uppercase;
+  /* width: fit-content; */
+  align-self: center;
+  margin: 3rem 0 1.25rem 0;
+  font-size: 1.2rem;
 `;
 
 export const StyledText = styled.p`
@@ -193,6 +206,68 @@ export const SummaryDot = styled.span`
 export const Emphasized = styled.span`
   color: ${p => p.theme.colorAccent};
   font-weight: bold;
+`;
+
+// Projects
+
+export const ProjectsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: ${p => p.theme.desktopSize}) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 35.3rem;
+  }
+`;
+
+export const ProjectLink = styled.a`
+  display: flex;
+  flex-direction: column;
+  width: 303px;
+
+  @media (min-width: ${p => p.theme.tabletSize}) {
+    width: 522px;
+  }
+
+  @media (min-width: ${p => p.theme.desktopSize}) {
+    margin: 0 0.7rem;
+  }
+`;
+
+export const ProjectThumbnail = styled.div`
+  align-self: center;
+  background-size: cover;
+  background-color: ${p => p.theme.colorDarken};
+  background-blend-mode: darken;
+  height: 179px;
+  width: 303px;
+  position: relative;
+  /* background-image: url(${weatherImage}); */
+  /* background-image: url(${(p)=>p.imgUrl}); */
+  /* background-image: ${(p)=>`url(${p.imgUrl}-303.png)`}; */
+  background-image: ${p => `url(${process.env.PUBLIC_URL}/images/${p.imgUrl}-303.png)`};
+
+  p {
+    /* font-size: 16px; */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: ${p => p.theme.colorTextLight};
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: ${p => p.theme.tabletSize}) {
+    align-self: auto;
+    width: 522px;
+    height: 309px;
+    background-image: ${p => `url(${process.env.PUBLIC_URL}/images/${p.imgUrl}-522.png)`};
+  }
 `;
 
 // Skills
