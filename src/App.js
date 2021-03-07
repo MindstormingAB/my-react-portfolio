@@ -1,6 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 
+import data from "./assets/data.json";
+
 import GlobalStyles from "./lib/global";
 import theme from "./lib/theme";
 import Header from "./components/Header";
@@ -13,6 +15,8 @@ import Footer from "./components/Footer";
 
 import { StyledContainer } from "./lib/styling";
 
+const projectsData = data.projects;
+
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
@@ -21,7 +25,7 @@ const App = () => {
       <StyledContainer>
         <About />
         <Tech />
-        <Projects />
+        <Projects projectsData={projectsData}/>
         <Skills />
         <More />
       </StyledContainer>

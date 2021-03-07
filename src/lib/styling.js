@@ -239,7 +239,7 @@ export const ProjectLink = styled.a`
   }
 `;
 
-export const ProjectThumbnail = styled.div`
+export const StyledThumbnail = styled.div`
   align-self: center;
   background-blend-mode: darken;
   height: 179px;
@@ -283,7 +283,7 @@ export const ProjectThumbnail = styled.div`
   }
 `;
 
-export const ProjectDescription = styled.div.attrs(() => ({
+export const StyledDescription = styled.div.attrs(() => ({
   tabIndex: 0
 }))`
   margin: 1.6rem 0 1rem 0;
@@ -452,7 +452,7 @@ export const StyledFooterTitle = styled.h1`
 
 export const StyledFooterText = styled.p`
   font-family: ${p => p.theme.fontSecundary};
-  font-size: ${p => p.attribution ? "0.75rem" : "inherit"};
+  font-size: ${p => p.attribution ? "0.65rem" : "inherit"};
   margin-top: ${p => p.attribution ? "1.5rem" : "inherit"};
   font-weight: ${p => p.bold ? "bold" : "normal"};
   text-align: center;
