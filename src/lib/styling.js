@@ -206,6 +206,7 @@ export const SummaryDot = styled.span`
 export const Emphasized = styled.span`
   color: ${p => p.theme.colorAccent};
   font-weight: bold;
+  text-transform: ${p => p.uppercase ? "uppercase" : ""};
 `;
 
 // Projects
@@ -240,17 +241,29 @@ export const ProjectLink = styled.a`
 
 export const ProjectThumbnail = styled.div`
   align-self: center;
-  background-size: cover;
-  background-color: ${p => p.theme.colorDarken};
   background-blend-mode: darken;
   height: 179px;
   width: 303px;
   position: relative;
+  // To be used as background image
+  /* background-size: cover;
+  background-color: ${p => p.theme.colorDarken};
+  background-image: ${p => `url(${process.env.PUBLIC_URL}/images/${p.imgUrl}-303.png)`}; */
   /* background-image: url(${weatherImage}); */
   /* background-image: url(${(p)=>p.imgUrl}); */
   /* background-image: ${(p)=>`url(${p.imgUrl}-303.png)`}; */
-  background-image: ${p => `url(${process.env.PUBLIC_URL}/images/${p.imgUrl}-303.png)`};
 
+  img {
+    filter: brightness(50%);
+    width: 303px;
+    height: 179px;
+
+    @media (min-width: ${p => p.theme.tabletSize}) {
+      width: 522px;
+      height: 309px;
+  }
+  }
+  
   p {
     /* font-size: 16px; */
     font-weight: bold;
@@ -266,7 +279,51 @@ export const ProjectThumbnail = styled.div`
     align-self: auto;
     width: 522px;
     height: 309px;
-    background-image: ${p => `url(${process.env.PUBLIC_URL}/images/${p.imgUrl}-522.png)`};
+    /* background-image: ${p => `url(${process.env.PUBLIC_URL}/images/${p.imgUrl}-522.png)`}; */
+  }
+`;
+
+export const ProjectDescription = styled.div.attrs(() => ({
+  tabIndex: 0
+}))`
+  margin: 1.6rem 0 1rem 0;
+  font-family: ${p => p.theme.fontSecundary};
+  line-height: 1.6rem;
+  
+  @media (min-width: ${p => p.theme.desktopSize}) {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+`;
+
+export const Arrows = styled(Emphasized).attrs(() => ({
+  ariaHidden: "true"
+}))`
+  text-decoration: underline;
+`;
+
+export const TagsContainer = styled.div.attrs(() => ({
+  tabIndex: 0
+}))`
+  display: flex;
+  margin-bottom: 1.5rem;
+  font-family: ${p => p.theme.fontSecundary};
+`;
+
+export const ProjectTag = styled.p.attrs(() => ({
+  tabIndex: 0
+}))`
+  font-size: 9px;
+  line-height: 10px;
+  background: ${p => p.theme.colorLight};
+  padding: 4px 11px;
+  margin-right: 3px;
+
+  @media (min-width: ${p => p.theme.tabletSize}) {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 18px;
+    margin-right: 7px;
   }
 `;
 
