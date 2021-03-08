@@ -1,13 +1,12 @@
 import React from "react";
-import { StyledSection, StyledTitle, StyledSubTitle, ProjectsContainer } from "../lib/styling";
+
 import Project from "./projects/Project";
-// import OtherProject from "./projects/ProjectThumbnail";
+
+import { StyledSection, StyledTitle, StyledSubTitle, ProjectsContainer } from "../lib/styling";
 
 const Projects = ({ projectsData }) => {
   const featuredProjects = projectsData.filter(item => item.featured);
   const otherProjects = projectsData.filter(item => !item.featured);
-  console.log(featuredProjects);
-  console.log(otherProjects);
 
   return (
     <StyledSection>

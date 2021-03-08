@@ -17,8 +17,6 @@ const Project = ({ projectsData }) => {
             aria-labelledby={project.title}
             target="_blank"
             rel="noopener noreferrer"
-            // href="https://smhi-killer.netlify.app/" // to be mapped
-            // aria-labelledby="proj-title" // to be mapped
           >
             {project.featured &&
               <ProjectThumbnail

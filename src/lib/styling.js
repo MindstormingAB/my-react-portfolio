@@ -39,10 +39,7 @@ export const StyledTitle = styled.h2.attrs(() => ({
 export const StyledSubTitle = styled.h3.attrs(() => ({
   tabIndex: 0 }))`
   color: ${p => p.theme.colorAccent};
-  /* color: ${p => p.theme.colorTextAccent}; */
-  /* padding: 3px 10px; */
   text-transform: uppercase;
-  /* width: fit-content; */
   align-self: center;
   margin: 3rem 0 1.25rem 0;
   font-size: 1.2rem;
@@ -59,12 +56,6 @@ export const StyledText = styled.p.attrs(() => ({
 
 export const StyledContainer = styled.main`
   flex: 1 0 auto;
-  /* align-self: center;
-  padding: 0 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1024px; */
 `;
 
 // Header
@@ -245,12 +236,6 @@ export const StyledThumbnail = styled.div`
   height: 179px;
   width: 303px;
   position: relative;
-  // To be used as background image
-  /* background-size: cover;
-  background-color: ${p => p.theme.colorDarken};
-  background-image: ${p => `url(${process.env.PUBLIC_URL}/images/${p.imgUrl}-303.png)`}; */
-  /* background-image: url(${(p)=>p.imgUrl}); */
-  /* background-image: ${(p)=>`url(${p.imgUrl}-303.png)`}; */
 
   img {
     filter: brightness(50%);
@@ -264,7 +249,6 @@ export const StyledThumbnail = styled.div`
   }
   
   p {
-    /* font-size: 16px; */
     width: fit-content;
     font-weight: bold;
     text-transform: uppercase;
@@ -279,7 +263,6 @@ export const StyledThumbnail = styled.div`
     align-self: auto;
     width: 522px;
     height: 309px;
-    /* background-image: ${p => `url(${process.env.PUBLIC_URL}/images/${p.imgUrl}-522.png)`}; */
   }
 `;
 

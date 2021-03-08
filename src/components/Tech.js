@@ -5,7 +5,9 @@ const Tech = () => {
   return (
     <StyledSection>
       <StyledTitle>Tech</StyledTitle>
-      <StyledText noPaddingBottom center>HTML, CSS, Flexbox, Grid, <Emphasized>JavaScript ES6</Emphasized>, <Emphasized>React</Emphasized>, React Native, <Emphasized>Redux</Emphasized>, <Emphasized>Node.js</Emphasized>, Express, Mongo DB, <Emphasized>Sanity</Emphasized>, <Emphasized>Web Progressive App</Emphasized>, responsiveness, web accessibility, API:s, mob-programming, pair-programming, Github.</StyledText>
+      <StyledText noPaddingBottom center>
+        HTML, CSS, Flexbox, Grid, <Emphasized>JavaScript ES6</Emphasized>, <Emphasized>React</Emphasized>, React Native, <Emphasized>Redux</Emphasized>, <Emphasized>Node.js</Emphasized>, Express, Mongo DB, <Emphasized>Sanity</Emphasized>, <Emphasized>Web Progressive App</Emphasized>, responsiveness, web accessibility, API:s, mob-programming, pair-programming, Github.
+      </StyledText>
     </StyledSection>
   );
 };

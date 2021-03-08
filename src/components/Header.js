@@ -1,8 +1,8 @@
 import React from "react";
-import { HeaderText, LinkContainer, Profile, StyledHeader, TextContainer } from "../lib/styling";
+
 import { ReactComponent as GithubIcon } from "../assets/github.svg";
 import { ReactComponent as LinkedInIcon } from "../assets/linkedin.svg";
-
+import { HeaderText, LinkContainer, Profile, StyledHeader, TextContainer } from "../lib/styling";
 
 const Header = () => {
   return (

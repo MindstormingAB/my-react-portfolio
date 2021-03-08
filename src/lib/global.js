@@ -11,7 +11,6 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     height: 100%;
-    /* font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif; */
     font-family: ${p => p.theme.fontPrimary};
     font-size: 16px;
     color: ${p => p.theme.colorTextPrimary};
@@ -35,16 +34,11 @@ const GlobalStyles = createGlobalStyle`
   h3,
   p {
     margin: 0;
-    /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
-    /* letter-spacing: 1px; */
-    /* text-transform: uppercase; */
-    /* font-weight: 400; */
   }
 
   h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    /* margin: 1rem 0 0 0; */
   }
 
   h2 {
