@@ -3,7 +3,8 @@
     {
       "title": "Rum 35A",
       "short_description": "Home decoration shop",
-      "long_description": "Web app built in React using Sanity as headless CMS",
+      "long_description": "Website built in React using Sanity as headless CMS",
+      "other_description": "Home decoration shop website built in React using Sanity as headless CMS",
       "image_url": "rum35a",
       "href": "https://rum-35a.netlify.app/",
       "tags": [
@@ -17,7 +18,8 @@
     {
       "title": "Epilepsy App",
       "short_description": "Final Project",
-      "long_description": "Progressive Web App built as final project for the Technigo boot camp",
+      "long_description": "Progressive Web App built as final project for the Fall 2020 edition of the Technigo Remote Front end Boot Camp",
+      "other_description": "Progressive Web App built as final project for the Fall 2020 edition of the Technigo Remote Front end Boot Camp",
       "image_url": "final-project",
       "href": "https://epilepsy-app-pwa.netlify.app/",
       "tags": [
@@ -25,6 +27,7 @@
         "React",
         "React Router",
         "Styled components",
+        "Accessibility",
         "Node.js",
         "Express",
         "MongoDB"
@@ -32,23 +35,228 @@
       "featured": true
     },
     {
-      "title": "SMHI Killer",
-      "short_description": "Weather App",
-      "long_description": "Web app built in Javascript using open weather API",
+      "title": "Max & Sandrine's",
+      "short_description": "Authentication App",
+      "long_description": "Week 20 - Pair-programming full stack project dealing with authentication and authorization",
+      "other_description": "Week 20 - Pair-programming full stack project dealing with authentication and authorization",
       "image_url": "week-20",
-      "href": "https://smhi-killer.netlify.app/",
+      "href": "https://max-sandrine-auth-app.netlify.app/",
       "tags": [
-        "HTML5",
-        "CSS3",
-        "Javascript ES6",
+        "React",
+        "Redux",
+        "Local storage",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "API",
+        "Pair-programming"
+      ],
+      "featured": true
+    },
+    {
+      "title": "Happy tweets by M",
+      "short_description": "Micro Blog App v2",
+      "long_description": "Week 19 - A new version of the app created week 11, this time as a full stack project with my own API",
+      "other_description": "Week 19 - A new version of the micro blog app created week 11, this time as a full stack project with my own API",
+      "image_url": "week-19",
+      "href": "https://happy-tweets-by-m.netlify.app/",
+      "tags": [
+        "React",
+        "Node.js",
+        "Express",
+        "Mongoose",
+        "MongoDB",
         "API"
       ],
       "featured": true
     },
     {
+      "title": "Spotify releases v2",
+      "short_description": "API and Mongoose",
+      "long_description": "Week 18 - Same Spotify releases data as week 18 but using Mongoose and data stored in a database",
+      "other_description": "Week 18 - Same Spotify releases data as week 18 but using Mongoose and data stored in a database",
+      "image_url": "week-18",
+      "href": "https://spotify-releases-v2.herokuapp.com/",
+      "tags": [
+        "Node.js",
+        "Express",
+        "Mongoose",
+        "MongoDB",
+        "API"
+      ],
+      "featured": false
+    },
+    {
+      "title": "Spotify releases",
+      "short_description": "API and local data",
+      "long_description": "Week 17 - Using Spotify releases data stored in a json file to create my first API",
+      "other_description": "Week 17 - Using Spotify releases data stored in a local json file to create my first API",
+      "image_url": "week-17",
+      "href": "https://spotify-releases.herokuapp.com",
+      "tags": [
+        "Node.js",
+        "Express",
+        "API"
+      ],
+      "featured": false
+    },
+    {
+      "title": "Lost in maze",
+      "short_description": "Adventure game",
+      "long_description": "Week 16 - Simple text-based game where the user needs to navigate through a maze following hints, built as a pair-programming project",
+      "other_description": "Week 16 - Simple text-based adventure game where the user needs to navigate through a maze following hints, built as a pair-programming project",
+      "image_url": "week-16",
+      "href": "https://lost-in-maze.netlify.app/",
+      "tags": [
+        "React",
+        "Redux",
+        "Styled components",
+        "Lottie animations",
+        "API",
+        "Pair-programming"
+      ],
+      "featured": true
+    },
+    {
+      "title": "To do or not to do",
+      "short_description": "Todo App",
+      "long_description": "Week 15 - Pulling together all parts of Redux building a todo app",
+      "other_description": "Week 15 - Pulling together all parts of Redux building a todo app",
+      "image_url": "week-15",
+      "href": "https://sandrines-todo.netlify.app/",
+      "tags": [
+        "React",
+        "Redux",
+        "Styled components"
+      ],
+      "featured": true
+    },
+    {
+      "title": "Wild animals quiz",
+      "short_description": "Quiz game",
+      "long_description": "Week 14 - This multiple choice quiz was an introduction to Redux and a mob-programming project",
+      "other_description": "Week 14 - This multiple choice quiz game was an introduction to Redux and a mob-programming project",
+      "image_url": "week-14",
+      "href": "https://wild-animals-quiz.netlify.app/",
+      "tags": [
+        "React",
+        "Redux",
+        "Styled components",
+        "Mob-programming"
+      ],
+      "featured": false
+    },
+    {
+      "title": "Fox News",
+      "short_description": "React Native App",
+      "long_description": "Week 13 - An introduction to Expo, React Native and styled components",
+      "other_description": "Week 13 - An introduction to Expo, React Native and styled components",
+      "image_url": "week-13",
+      "href": "https://snack.expo.io/@mindstorming/github.com-mindstormingab-project-react-native-app",
+      "tags": [
+        "Expo",
+        "React Native",
+        "React Navigation",
+        "Styled components",
+        "API"
+      ],
+      "featured": false
+    },
+    {
+      "title": "Sandrine's IMDB",
+      "short_description": "Movie App",
+      "long_description": "Week 12 - Multipage React app using themoviedb.org API",
+      "other_description": "Week 12 - Multipage movie app using React Router and themoviedb.org API",
+      "image_url": "week-12",
+      "href": "https://sandrines-movies-project.netlify.app/",
+      "tags": [
+        "React",
+        "React Router",
+        "CSS3",
+        "API"
+      ],
+      "featured": true
+    },
+    {
+      "title": "Happy tweets",
+      "short_description": "Micro Blog App v1",
+      "long_description": "Week 11 - Twitter look-a-like sending GET and POST requests to Technigo's Happy Thoughts API",
+      "other_description": "Week 11 - Twitter-like micro blog app sending GET and POST requests to Technigo's Happy Thoughts API",
+      "image_url": "week-11",
+      "href": "https://happytweets.netlify.app/",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "React",
+        "API"
+      ],
+      "featured": false
+    },
+    {
+      "title": "Covid-19 Survey",
+      "short_description": "Survey App",
+      "long_description": "Week 10 - Survey form built in React to learn how to use useState",
+      "other_description": "Week 10 - Survey form built in React to learn how to use useState",
+      "image_url": "week-10",
+      "href": "https://weekly-evaluation.netlify.app/",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "React"
+      ],
+      "featured": true
+    },
+    {
+      "title": "Mindstormify",
+      "short_description": "Music App",
+      "long_description": "Week 9 - Music releases site built with React components using a stored response from the Spotify API",
+      "other_description": "Week 9 - Music releases site built with React components using a stored response from the Spotify API",
+      "image_url": "week-09",
+      "href": "https://mindstormify.netlify.app/",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "React"
+      ],
+      "featured": true
+    },
+    {
+      "title": "Sandrine Elander",
+      "short_description": "Portfolio v1",
+      "long_description": "Week 8 - First draft of my portfolio based on the Technigo portfolio design made by Jenny Skogvoll at Makeable Sthlm",
+      "other_description": "Week 8 - First draft of my portfolio based on the Technigo portfolio design made by Jenny Skogvoll at Makeable Sthlm",
+      "image_url": "week-08",
+      "href": "https://sandrineelander.netlify.app/",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "Responsiveness",
+        "Accessibility"
+      ],
+      "featured": true
+    },
+    {
+      "title": "Seafood in Atlanta",
+      "short_description": "Food review website",
+      "long_description": "Week 7 - Built in the style of Wolt using Zomato API, first mob-programming project using Git branching and merging",
+      "other_description": "Week 7 - Food review website in the style of Wolt using Zomato API, first mob-programming project using Git branching and merging",
+      "image_url": "week-07",
+      "href": "https://seafood-in-atlanta.netlify.app/",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "Javascript ES6",
+        "API",
+        "Git",
+        "Mob-programming"
+      ],
+      "featured": false
+    },
+    {
       "title": "SMHI Killer",
       "short_description": "Weather App",
-      "long_description": "Web app built in Javascript using open weather API",
+      "long_description": "Week 6 - Web app built in Javascript using OpenWeather API",
+      "other_description": "Week 6 - Weather app built in Javascript using OpenWeather API",
       "image_url": "week-06",
       "href": "https://smhi-killer.netlify.app/",
       "tags": [
@@ -60,9 +268,39 @@
       "featured": true
     },
     {
+      "title": "Cluedo",
+      "short_description": "Mystery Picker",
+      "long_description": "Week 5 - Piece of the classic board game Cluedo built in Javascript and based on creating objects and arrays",
+      "other_description": "Week 5 - Mystery picker, piece of the classic board game Cluedo built in Javascript and based on creating objects and arrays",
+      "image_url": "week-05",
+      "href": "https://sandrinescluedo.netlify.app/",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "Javascript ES6"
+      ],
+      "featured": true
+    },
+    {
+      "title": "Karsan's pizzeria",
+      "short_description": "Pizza bot",
+      "long_description": "Week 4 - Text-based bot built in Javascript as a pair-programming project",
+      "other_description": "Week 4 - Text-based pizza bot built in Javascript as a pair-programming project",
+      "image_url": "week-04",
+      "href": "https://bigbotman.netlify.app/",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "Javascript ES6",
+        "Pair-programming"
+      ],
+      "featured": true
+    },
+    {
       "title": "Happy Buddy Dog Day Care",
       "short_description": "Business Site",
-      "long_description": "One pager website with video header, signup form and accordion",
+      "long_description": "Week 3 - One pager website with video header, signup form and accordion built in Javascript",
+      "other_description": "Week 3 - One pager buisness site with video header, signup form and accordion built in Javascript",
       "image_url": "week-03",
       "href": "https://happy-buddy.netlify.app/",
       "tags": [
@@ -71,6 +309,20 @@
         "Javascript ES6"
       ],
       "featured": false
+    },
+    {
+      "title": "Dog rescue",
+      "short_description": "News Site",
+      "long_description": "Week 2 - My first application, built with flexbox and grid techniques in responsive design",
+      "other_description": "Week 2 - My first application, a classic news site built with flexbox and grid techniques in responsive design",
+      "image_url": "week-02",
+      "href": "https://sandrines-dog-rescue.netlify.app/",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "Flexbox"
+      ],
+      "featured": true
     }
   ]
 }

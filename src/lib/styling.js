@@ -265,6 +265,7 @@ export const StyledThumbnail = styled.div`
   
   p {
     /* font-size: 16px; */
+    width: fit-content;
     font-weight: bold;
     text-transform: uppercase;
     color: ${p => p.theme.colorTextLight};

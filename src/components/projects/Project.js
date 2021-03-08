@@ -29,6 +29,9 @@ const Project = ({ projectsData }) => {
             <ProjectDescription
               shortDescription={project.short_description}
               longDescription={project.long_description}
+              title={project.title}
+              otherDescription={project.other_description}
+              featured={project.featured}
             />
             <ProjectTags tags={project.tags}/>
           </ProjectLink>
