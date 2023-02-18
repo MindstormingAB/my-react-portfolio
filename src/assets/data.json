@@ -92,7 +92,7 @@
       "long_description": "Week 17 - Using Spotify releases data stored in a json file to create my first API",
       "other_description": "Week 17 - Using Spotify releases data stored in a local json file to create my first API",
       "image_url": "week-17",
-      "href": "https://spotify-releases.herokuapp.com",
+      "href": "https://spotify-releases.mindstorming.se",
       "tags": [
         "Node.js",
         "Express",
