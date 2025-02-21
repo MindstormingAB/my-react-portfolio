@@ -3,7 +3,7 @@
 I have created this portfolio to gather all my front end projects in all place:
 
 - the 20 applications I built during the 24 weeks of the Fall 2020 edition of the Technigo Remote Front End Boot Camp
-- all applications created after the Boot Camp
+- all applications created after the Boot Camp, especially EP App
 
 The layout is based on the Technigo portfolio design made by Jenny Skogvoll at Makeable Sthlm.
 
