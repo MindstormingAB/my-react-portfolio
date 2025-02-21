@@ -76,7 +76,7 @@
       "long_description": "Week 18 - Same Spotify releases data as week 18 but using Mongoose and data stored in a database",
       "other_description": "Week 18 - Same Spotify releases data as week 18 but using Mongoose and data stored in a database",
       "image_url": "week-18",
-      "href": "https://spotify-releases-v2.herokuapp.com/",
+      "href": "https://spotify-releases-v2.mindstorming.se",
       "tags": [
         "Node.js",
         "Express",
